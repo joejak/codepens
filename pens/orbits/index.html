@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="center sun circle" style="contain: content;" >
+            <img src="./assets/sun.gif" alt="" srcset="">
+        </div>
+        <div class="orbit-slot" style="--speed: 2.2s; --distance: 400;">
+            <div class="orbiter-slot">
+                <div class="circle rotation" style="height: 80px; --speed: 5s; --rotatedir: reverse">
+                    <h2 style="color: white; font-size: 24pt;">
+                        <b>↓</b>
+                    </h2>
+                </div>   
+                <div class="orbit-slot" style="--speed: 1s; --distance: 100; --rotatedir: normal">
+                    <div class="orbiter-slot">
+                        <div  class="circle" style="width: 10px"></div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        <div class="orbit-slot" style="--speed: 4s; --distance: 600; rotate: 180deg;">
+            <div class="orbiter-slot">
+                <div class="circle rotation" style="height: 80px; --speed: 6s; --rotatedir: reverse; rotate: 180deg">
+                    <h2 style="color: white; font-size: 24pt;">
+                        <b>↓</b>
+                    </h2>
+                </div>   
+                <div class="orbit-slot" style="--speed: .8s; --distance: 60; --rotatedir: normal">
+                    <div class="orbiter-slot">
+                        <div  class="circle" style="width: 10px"></div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

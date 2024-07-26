@@ -7,6 +7,14 @@ body {
     );
   }
   
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 28pt;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
   .wrapper {
     width: 100vw;
     height: 100vh;
@@ -89,6 +97,7 @@ body {
     transform-origin: bottom;
     height: 800px;
     transition: 200ms;
+    transition-delay: 200ms;
   }
   
   .card {
@@ -183,12 +192,5 @@ body {
   
   input:active {
     background-color: aqua;
-  }
-  
-  h1 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 28pt;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   

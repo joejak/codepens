@@ -1,5 +1,6 @@
 :root{
-    --outlines: 0px; 
+    --outlines: 0px;
+    --rotationStart: 0deg; 
     --rotatedir: normal; 
     --speed: 0s; 
     --distance: 0; 
@@ -8,6 +9,8 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url(./assets/StarField.png);
+    background-size: contain;
 }
 
 h1, h2, h3, p{
@@ -62,9 +65,9 @@ h1, h2, h3, p{
 }
 
 .rotation{
-    animation: full-rotation var(--speed) infinite var(--rotatedir);
+    animation: full-rotation var(--speed) infinite;
     animation-timing-function: linear;
-    animation-direction: ;
+    animation-direction: var(--rotatedir);
 }
 
 .circle{

@@ -1,0 +1,40 @@
+:root{
+    --hexsize: 200;
+}
+
+.hexgrid{
+    background-color: blue;
+    width: fit-content;
+    padding-left: calc(var(--hexsize)*.1px); 
+    padding-right: calc(var(--hexsize)*.1px); 
+    display: grid;
+    grid-auto-rows: 3;
+}
+
+.hexgrid :nth-child(even of .col){
+    margin-top: calc(var(--hexsize)* .57px)
+}
+
+.hexgrid .col{
+
+}
+
+.col{
+    width: var(--hexsize);
+}
+
+.hex{
+    position: relative;
+    rotate: 30deg;
+    width: calc(var(--hexsize)*1px); 
+    display:flex;
+    margin: -10px;  
+}
+
+.t, .tr, .tl, .b, .bl, .br{
+    color: black; 
+    stroke: black; 
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    fill: blue; 
+}
